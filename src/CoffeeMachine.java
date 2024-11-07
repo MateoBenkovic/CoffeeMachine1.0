@@ -87,6 +87,7 @@ public class CoffeeMachine {
 
         Scanner scanner = new Scanner(new File(filePath));
         scanner.useDelimiter("; |\n");
+
         water = scanner.nextInt();
         milk = scanner.nextInt();
         coffeeBeans = scanner.nextInt();
