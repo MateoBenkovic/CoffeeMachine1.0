@@ -14,6 +14,7 @@ public class CoffeeMachine {
     private String username = "admin";
     private String password = "admin123";
 
+    //make coffee if machine has enough resources
     public void makeCoffee (CoffeeType coffeeType) {
         if (hasEnoughResources(coffeeType)) {
             water -= coffeeType.getWaterNeeded();
@@ -29,6 +30,7 @@ public class CoffeeMachine {
 
     }
 
+    //check resources for coffee
     private boolean hasEnoughResources(CoffeeType coffeeType) {
         boolean check = true;
         message = "";
@@ -70,6 +72,7 @@ public class CoffeeMachine {
         this.cups += cups;
     }
 
+    //save machine state to file
     public void saveData(String filePath) throws IOException {
         FileWriter fileWriter = new FileWriter(filePath);
         Scanner scanner = new Scanner(System.in);
@@ -82,6 +85,7 @@ public class CoffeeMachine {
         fileWriter.close();
     }
 
+    //load machine state from file
     public void loadData(String filePath) throws FileNotFoundException {
         FileReader fileReader = new FileReader(filePath);
 

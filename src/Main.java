@@ -266,7 +266,7 @@ public class Main {
             }
         }*/
 
-        //Stage 6
+        //Stage 6, 7 and 8
         //setting up machine state and types of coffee
         CoffeeMachine coffeeMachine = new CoffeeMachine();
         coffeeMachine.loadData("docs/machineState.txt");
@@ -275,6 +275,7 @@ public class Main {
         CoffeeType latte = new CoffeeType(200, 100, 12, 6);
         CoffeeType cappuccino = new CoffeeType(200, 100, 12, 6);
 
+        //user interface
         while (true) {
             System.out.println("Write action (buy, login, exit): ");
             System.out.print("> ");
