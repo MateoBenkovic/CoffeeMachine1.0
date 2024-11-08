@@ -79,7 +79,7 @@ public class CoffeeMachine {
 
         String machineState = "";
 
-        machineState += getWater() + "; " + getMilk() + "; " + getCoffeeBeans() + "; " + getCups() + "; " + getMoney() + "\n" + getUsername() + "; " + getPassword();
+        machineState += water + "; " + milk + "; " + coffeeBeans + "; " + cups + "; " + money + "\n" + username + "; " + password;
 
         fileWriter.write(machineState);
         fileWriter.close();
